@@ -120,6 +120,7 @@ header {
         flex-direction: row;
         justify-content: center;
     }
+    
 }
 /* ======== media queries ( small devices ) =======*/
 
@@ -129,6 +130,9 @@ header {
     }
     .icon {
         width: 100%;
+    }
+    nav {
+        margin: 0 2rem;
     }
 }
 

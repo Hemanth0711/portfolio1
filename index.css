@@ -7,7 +7,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    
+    transition: all 400ms ease;
 }
 
 p {
@@ -30,6 +30,7 @@ img {
 nav {
     display: flex;
     justify-content: center;
+    font-size: x-small;
     gap: 2rem;
     background: white;
     border-bottom: 0.5px solid rgb(227, 227, 227);

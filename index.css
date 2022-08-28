@@ -30,7 +30,7 @@ img {
 nav {
     display: flex;
     justify-content: center;
-    font-size: x-small;
+    font-size: small;
     gap: 2rem;
     background: white;
     border: 0.5px solid #00478d;

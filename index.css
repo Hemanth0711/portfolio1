@@ -10,6 +10,10 @@
     transition: all 350ms ease;
 }
 
+a,button {
+    cursor: pointer;
+}
+
 p {
     font-size: small;
 }
@@ -30,11 +34,10 @@ img {
 nav {
     display: flex;
     justify-content: center;
-    font-size: x-small;
-    gap: 2rem;
+    font-size: small;
+    gap: 1.5rem;
     background: white;
-    border: 2px solid #00478d;
-    border-top: 0;
+    border-bottom: 0.5px solid #869fb2;
     border-radius: 0 0 2rem 2rem;
 }
 
@@ -73,6 +76,10 @@ header {
     gap: 2rem;
 }
 
+.hr{
+    border-bottom: 0.5px solid #869fb2;
+}
+
 .icon {
     width: 90%;
 }
@@ -83,8 +90,13 @@ header {
     padding: 10px;
     border: 1px solid #007DFE;
     border-radius: 0.2rem;
+    transition: none;
 }
 
+.btn_blue:hover {
+    background: #0274e6;
+    border-color: azure;
+}
 .btn_blue_variant {
     border: 1px solid #007DFE;
     color: #007DFE;
@@ -92,12 +104,12 @@ header {
     border-radius: 0.2rem;
 }
 
-.btn_white {
-    border: 1px solid white;
+.btn_blue_variant:hover {
+    background: #007DFE;
     color: white;
-    padding: 10px;
-    border-radius: 0.2rem;
+    border-color: white;
 }
+
 
 /* ======== media queries ( medium devices ) ======*/
 @media screen and (max-width: 1024px) {
@@ -131,9 +143,6 @@ header {
     }
     .icon {
         width: 100%;
-    }
-    nav {
-        margin: 0 3px;
     }
 }
 

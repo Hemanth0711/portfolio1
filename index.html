@@ -9,7 +9,14 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         />
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('O_sxK4RFBRnmejTC1'); // public key
+            })();
+        </script>
+        <script type = "text/javascript" src="index.js"></script>
     </head>
     <body>
         <header>
@@ -24,11 +31,11 @@
         <div id = "home" class = "home__container">
             <div class = "home__left">
                 <div class="home__content">
-                    <h1>Hi I'am Hemanth</h1>
+                    <h1>Hi I'm Hemanth</h1>
                     <p>STUDENT - CODER - DEVELOPER </p>
-                    <hr>
+                    <div class = "hr"></div>
                     <div style = "display: flex; justify-content: center; gap: 5px; padding-top: 10px;"> 
-                        <a href = "" class = "btn_blue"> my resume </a>  
+                        <a href = "things/resume1.pdf" type = "button" download="resume" class = "btn_blue"> my resume </a>  
                         <a href = "#contact" class = "btn_blue_variant"> contact </a>
                     </div>
                 </div>
@@ -56,7 +63,8 @@
                     </ul>
                 </div>
                 <div class = "about__content">
-                    <p style = "font-size: medium;"> Hi, I'am Hemanth currently pursuing an undergraduate degree in Electronics and Communication Engineering at GRIET, worked on a different domains like IOT, Web Development and Data Analysis.
+                    <p style = "font-size: medium;">
+                        Hey, I am Hemanth. I am currently pursuing an undergraduate degree in Electronics and Communication Engineering at GRIET. I have acquired knowledge in the below mentioned skills and have worked on different domains like IOT, Web Development, and Data Analysis.
                     </p>
                 </div>
                 
@@ -140,7 +148,7 @@
                             <p style = "color: azure">Python</p>
                             <h5>Data analysis of tobacco and alcohol consumption over adults.</h5><br>
                             <div class='project__links'>
-                            <a href="https://github.com" target='_blank' class='btn_blue'>View Project</a>
+                            <a href="https://github.com/smartinternz02/SBSPS-Challenge-7323-1632922568" target='_blank' class='btn_blue'>View Project</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +163,7 @@
                             <p style = "color: azure">Frontend</p>
                             <h5>A website to spread awareness about natural disasters and to help the victims.</h5><br>
                             <div class='project__links'>
-                            <a href="https://github.com" target='_blank' class='btn_blue'>View Project</a>
+                            <a href="https://github.com/Hemanth0711/web-dev-project" target='_blank' class='btn_blue'>View Project</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +178,7 @@
                             <p style = "color: azure">IoT</p>
                             <h5>A smart IoT device for cyclists. It contains a jacket with an embedded display and a remote to control it.</h5><br>
                             <div class='project__links'>
-                            <a href="https://github.com" target='_blank' class='btn_blue'>View Project</a>
+                            <a href="https://github.com/Hemanth0711/Intimating-Jacket" target='_blank' class='btn_blue'>View Project</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +193,7 @@
                             <p style = "color: azure">IoT Frontend Firebase</p>
                             <h5>A smart IoT device for asthama patients.</h5><br>
                             <div class='project__links'>
-                            <a href="https://github.com" target='_blank' class='btn_blue'>View Project</a>
+                            <a href="https://github.com/saigopi18/Asthma-Managing-Device" target='_blank' class='btn_blue'>View Project</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +222,7 @@
                   <FaLinkedin class = 'contact__option-icon'/>
                   <h4>Linkedin</h4>
                   <p>G Hemanth Sai</p>
-                  <a class = "links1" href='https://linkedin.com' target = '_blank'>Send a message</a>
+                  <a class = "links1" href='https://www.linkedin.com/in/g-hemanth-sai/' target = '_blank'>Send a message</a>
                 </article>
                 <article class="contact__option">
                   <BsWhatsapp class = 'contact__option-icon'/>
@@ -223,11 +231,11 @@
                   <a class = "links1" href='https://wa.me/+919848586421' target = '_blank'>Send a message</a>
                 </article>
               </div>
-              <form ref = {form} onSubmit = {sendEmail}>
+              <form id = "myForm">
                 <input type="text" name = 'name' placeholder='Full Name' required/>
                 <input type='email' name='email' placeholder='Email' required />
                 <textarea name = 'message' rows='7' placeholder='Message' required></textarea>
-                <button type = "submit" class = 'btn_blue' onClick = {func}>Send Message</button>
+                <button type = "submit" class = 'btn_blue' >Send Message</button>
               </form>
             </div>
             </div>

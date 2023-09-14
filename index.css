@@ -271,12 +271,18 @@ header {
 h3 {
     padding-top: 0.9rem;
     color: white;
+    font-size: large;
 }
 
 .swiper-wrapper {
     margin-bottom: 0.2rem;
     background: rgb(237, 243, 254);
     padding: 2rem 0;
+}
+
+.project__item > h5 {
+    font-size: medium;
+    font-weight: 10px;
 }
 
 .swiper-button-next{

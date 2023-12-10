@@ -49,7 +49,7 @@ header {
 
 
 .head {
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     padding: 16px 0 16px 0;
 }
@@ -63,11 +63,11 @@ header {
     justify-content: space-between;
 }
 
-.home__left, .home__right {
+.home__left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
+    width: 50%;
 }
 
 .home__content {

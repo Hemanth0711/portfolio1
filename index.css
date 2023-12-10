@@ -49,7 +49,7 @@ header {
 
 
 .head {
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     padding: 16px 0 16px 0;
 }
@@ -66,14 +66,16 @@ header {
 .home__left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    
     width: 50%;
 }
 
 .home__content {
-    margin-left: 10rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-left: 10%;
     gap: 2rem;
 }
 
@@ -122,12 +124,15 @@ header {
         
     }
     .home__content {
-        margin-left: 0;
+        margin: 0;
+        width: 100%;
     }
-
+    
     .home__left {
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        width: 100%;
     }
     .home__right {
         display: flex;
@@ -145,62 +150,12 @@ header {
     .icon {
         width: 100%;
     }
-}
-
-.about__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: large;
-    background: #007DFE;
-    padding: 3rem 5rem ;
-    border: 1px solid #007DFE;
-    border-radius: 2rem;
-}
-.about__container{
-    display: flex;
-    gap: 2rem;
-    padding: 0 2rem;
-}
-
-.about__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* ======== media queries ( medium devices ) ======*/
-@media screen and (max-width: 1024px) {
-    .about__container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        padding: 0;
-    }
-
-    .about__box {
-        width: 60%;
-    }
-
-    .about__content {
-        width: 80%;
-    }
-
-
-}
-/* ======== media queries ( small devices ) =======*/
-
-@media screen and (max-width: 600px) {
-    
-    .about__box {
-        width: 90%;
-    }
-
-    .about__content {
-        width: 90%;
+    .home__content {
+        margin: 0;
+        width: 100%;
     }
 }
+
 
 .skill__container {
     display: grid;
@@ -243,6 +198,9 @@ header {
     .skill__container {
         grid-template-columns: 1fr;
         padding: 0 0.5rem;
+    }
+    .head {
+        font-size: 12px;
     }
 }
 
